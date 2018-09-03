@@ -6,18 +6,18 @@ function qEquation(a,b,c) {
     let dD = b*b-4*a*c;
 
 if(dD>0){
-    let top1 = ((-1)*(b))+ Math.sqrt(dD);
-    let top2 = ((-1)*(b))- Math.sqrt(dD);
+    const top1 = ((-1)*(b))+ Math.sqrt(dD);
+    const top2 = ((-1)*(b))- Math.sqrt(dD);
     
-    let x1 = top1/(2*a);
-    let x2 = top2/(2*a);
+    const x1 = top1/(2*a);
+    const x2 = top2/(2*a);
 
-  let  result = x1 +';'+ x2;
+  const  result = x1 +';'+ x2;
     return result;
 }
 else if (dD==0) {
-    let x = Math.abs(b)/(2*a);
-    let result = x;
+    const x = Math.abs(b)/(2*a);
+    const result = x;
     return result;
 }
 
